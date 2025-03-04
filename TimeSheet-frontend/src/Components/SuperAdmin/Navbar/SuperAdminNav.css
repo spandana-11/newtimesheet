@@ -1,0 +1,57 @@
+/* Base styling */
+.superadmin-navigation {
+    margin-top: -200px; /* Adjust the navigation container position */
+    width: 100%; /* Ensure it takes up the full width */
+}
+
+.superadmin-navigation .nav-control {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    overflow: hidden; /* Prevents scrolling */
+    flex-wrap: wrap; /* Allows items to wrap if necessary */
+}
+
+.superadmin-navigation-link {
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.superadmin-navigation-link:hover,
+.superadmin-navigation-link.active {
+    color: #007bff; /* Active or hovered link color */
+}
+
+/* Media query for tablets (up to 768px) */
+@media (max-width: 768px) {
+    .superadmin-navigation .nav-control {
+        gap: 15px;
+        justify-content: space-evenly; /* Distribute nav items evenly */
+    }
+
+    .superadmin-navigation-link {
+        padding: 8px 12px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+
+
+/* Media query for mobile devices (up to 480px) */
+@media (max-width: 480px) {
+    .superadmin-navigation .nav-control {
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: center;
+        gap: 10px; /* Reduce gap between items */
+    }
+
+    .superadmin-navigation-link {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+}

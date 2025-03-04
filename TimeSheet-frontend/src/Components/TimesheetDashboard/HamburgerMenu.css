@@ -1,0 +1,89 @@
+/* HamburgerMenu.css */
+
+.hamburgermenu-custom-navbar {
+
+  /* Gradient background */
+  padding: 1rem;
+  /* Padding for the navbar */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.hamburgermenu-logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.hamburgermenu-logo {
+  height: 3.5rem;
+  margin: 0 2rem;
+  /* Adjust the size of the logo */
+}
+
+.hamburgermenu-logo-text {
+  font-size: 2.5rem;
+  margin-left: -0.8rem;
+  color: #fff;
+}
+
+.hamburgermenu-navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.hamburgermenu-icon {
+  font-size: 2rem;
+  /* Size of the hamburger icon */
+  color: #5a5555;
+  /* Color of the hamburger icon */
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+  /* Ensure the menu is aligned to the right */
+}
+
+.hamburgermenu-nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.hamburgermenu-nav-link {
+  color: #fff;
+  padding: 1rem 1rem;
+  font-size: 15px;
+  margin: 0 2rem;
+  transition: background-color 0.3s;
+}
+
+.hamburgermenu-nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  /* Hover effect */
+}
+
+.login-button {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.50rem;
+  transition: background-color 0.3s;
+  margin: 0 3rem;
+  font-size: 15px;
+
+}
+
+.login-button:hover {
+  background-color: rgb(130, 114, 114);
+}
+
+@media (max-width: 992px) {
+
+  /* Small screen sizes */
+  .navbar-collapse {
+    justify-content: center;
+    text-align: center;
+  }
+}

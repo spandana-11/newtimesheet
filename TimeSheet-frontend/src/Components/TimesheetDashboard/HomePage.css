@@ -1,0 +1,39 @@
+.homepage-container {
+  min-height: 100vh;
+  /* Ensures the container takes up the full height of the screen */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+
+
+  /* Adds padding to the sides */
+}
+
+.container {
+  max-width: 100%;
+  width: 100%;
+  padding: 0 1rem;
+
+  /* On small screens, use 100% width */
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80.66%;
+    /* 8 columns out of 12 columns (8/12 = 66.66%) */
+  }
+}
+
+.homepage-heading {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.homepage-login-button {
+  width: 10rem;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  /* Center the button horizontally */
+}
